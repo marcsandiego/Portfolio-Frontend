@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Template CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"> 
+    
+    <title>Portfolio - Marc San Diego</title>
+    <link rel="icon" href="assets/logo_size-removebg-preview.png">
+</head>
+<style>
+    .button{
+        padding: 2px 14px;
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+        border-radius: 50px;
+    }
+
+    .btn-txt{
+        font-style: normal;
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 30px;
+        color: #FFB742;
+        background-color: transparent;
+        display: flex;
+        align-items: center;
+        text-align: center;
+    }
+
+    .logo-size{
+        width:50px;
+        height:50px;
+    }
+
+    .btn-txt:hover{
+        font-style: normal;
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 30px;
+        color: #212529;
+        display: flex;
+        align-items: center;
+        text-align: center;
+    }
+
+    .btn-txt-colored{
+        font-style: normal;
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 30px;
+        color: #212529;
+        display: flex;
+        align-items: center;
+        text-align: center;
+    }
+
+    .font{
+        color: #fff;
+        text-align: center;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    }
+
+    .avatar-size{
+        width:250px;
+        height:250px;
+    }
+
+    .col-sm{
+        background: rgba(56, 62, 69, 0.44);
+        border-radius: 10px;
+        margin: 0px 15px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px 30px;
+        background-color: #292B2E;
+        
+    }
+
+    .col-xl{
+        background: rgba(56, 62, 69, 0.44);
+        border-radius: 10px;
+        margin: 0px 15px;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 10px 30px;
+        background-color: #292B2E;
+        text-align: left;
+
+        
+    }
+    
+    .row{
+        padding:50px 60px; 
+    }
+
+    .box-logo-size{
+        height: 80px;
+        width: 80px;
+    }
+
+    .chevron-logo-size{
+        height: 20px;
+        width: 20px;
+    }
+
+    .about{
+        display: flex;
+        flex-direction: row;
+        padding:50px 160px; 
+    }
+
+    .who{
+        position: absolute;
+        padding: 6px 12px;
+        background: rgba(255, 255, 255, 0.08);
+        border-radius: 50px;
+        color: #FFB742;
+    }
+
+    .my-works{
+        text-align: center;
+        padding: 6px 12px;
+        color: #FFB742;
+        font-size: larger;
+        margin-top: 80px;
+    }
+
+    .about-right{
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        margin: 0px 0px 0px 50px;
+    }
+
+    .me-size{
+        max-width: 100%;
+        width:2800px;
+    }
+
+    .skill-size{
+        position: flex;
+        flex-direction: row;
+        align-content: center;
+        margin: 10px 5px;
+        flex-grow: 25%;
+    }
+
+
+    .logo{
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        width: 60%;
+        border-radius:50%;
+    }
+
+    .col-xl{
+        padding-top: 50px;
+        padding-bottom: 20px;
+    }
+
+    .col-contact{
+        text-align: left;
+    }
+
+
+</style>
+<body>
+    <header id="site-header" class="w3lhny-head fixed-top">
+    <nav class="navbar navbar-dark navbar-expand-md fixed-top"  style="background-color: #1C1C1C; padding:10px 60px;">
+        <div class="container-fluid"><a class="navbar-brand" href="http://localhost/Portfolio/">
+            <img class="logo-size" src="assets/logo_size-removebg-preview.png">
+        </a><button data-toggle="collapse" class="navbar-toggler" data-target="#navcol-1"><span class="sr-only">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
+            <div class="collapse navbar-collapse"
+                id="navcol-1">
+                <ul class="nav navbar-nav text-right text-white ml-auto">
+                    <li class="nav-item" role="presentation"><a class="nav-link" href="http://localhost/Portfolio/">Home</a></li>
+                    <li class="nav-item" role="presentation"><a class="nav-link" href="#about">About</a></li>
+                    <li class="nav-item" role="presentation"><a class="nav-link" href="#skills">Skills</a></li>
+                    <li class="nav-item" role="presentation"><a class="nav-link" href="#projects">Projects</a></li>
+                    <li class="nav-item" role="presentation"><a class="nav-link" href="#contact">Contact</a></li>
+                </ul>
+                <ul class="nav navbar-nav ml-auto">
+                    <button type="button" class="btn btn-warning button btn-txt">Hire Me</button>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    </header>
+
+    <div id="home" class="container-fluid content-1 py-5 font" style="background-color: #212529; margin-top:65px;"> 
+            <h2 style="padding-top: 50px;">Hi, I am <span style="color:#FFB742; text-decoration: underline;" >Marc San Diego</span> 👋</h2>
+            <h1 style="font-size:58px;">Passionate Front-End Developer</h1>
+            <p>&nbsp</p>
+            <p style="font-weight: normal; font-size: 20px;">I Design and Code Beautifully Simple Things, and I Love What I Do.</p>
+            <img class="avatar-size" src="assets/avataaars.png">
+            <p>&nbsp</p>
+            <div class="row">
+
+                <div class="col-sm">
+                <img class="box-logo-size" src="assets/exp.png">
+                <div>
+                    <h1 style="color: #FFB742;">18+</h1>
+                    <h4>Months of Experience</h4>
+                </div>
+                <img class="chevron-logo-size" src="assets/entypo_chevron-right.png">
+                </div>
+
+                <div class="col-sm">
+                <img class="box-logo-size" src="assets/proj.png">
+                <div>
+                    <h1 style="color: #FFB742;">10+</h1>
+                    <h4>Completed Projects</h4>
+                </div>
+                <img class="chevron-logo-size" src="assets/entypo_chevron-right.png">
+                </div>
+
+                <div class="col-sm">
+                <img class="box-logo-size" src="assets/clients.png">
+                <div>
+                    <h1 style="color: #FFB742;">2</h1>
+                    <h4>Happy Clients</h4>
+                </div>
+                <img class="chevron-logo-size" src="assets/entypo_chevron-right.png">
+                </div>
+              </div>
+    </div>
+
+    <div id= "about" class="container-fluid content-1 py-5 font" style="background-color:#292B2E;">
+    <div class="about" style="margin-top: 60px;">
+        <div>
+            <img class="me-size" src="assets/me.png">
+        </div>
+  
+        <div class="about-right">
+            <div>
+                <p class="who">WHO I AM</p>
+            </div>
+
+            <p>&nbsp</p>
+
+            <div>
+                <h1>About Me</h1>
+                <p>&nbsp</p>
+            </div>
+   
+            <div> 
+                <p style="color: #D5D5D5; text-align: left; font-size: 20px;">Hi! I’m Marc Lawrence San Diego currently studying Computer Science major in Software Engineering at FEU Institute of Technology, and I’m a web developer who has passion for building clean web applications with intuitive functionality. I enjoy the process of turning ideas into reality using creative solutions. I’m always curious about learning new skills, tools, and concepts. In addition to working on various solo projects, I have worked with creative teams, which involves collaborations and communications, source control, and project management.</p>
+            </div>
+
+            <div>
+                <p>&nbsp</p>
+                <button type="button" class="btn btn-warning button btn-txt">See my CV</button>
+            </div>         
+        </div>
+    </div>   
+    </div>
+
+    <div id= "skills" class="container-fluid content-1 py-5 font" style="background-color: #212529;">
+        <div class="row" style="margin-top: 100px;">
+            <div class="col">
+                <div style="margin-left:100px;">
+                    <p class="who">MY SKILLS</p>
+                    <p>&nbsp</p>
+                    <h1 style="text-align: left;">What My Programming Skills Included?</h1>
+                    <p>&nbsp</p>
+                    <p style="color: #D5D5D5; text-align: left; font-size: 20px;">I develop simple, intuitive and responsive user interface that helps users get things done with less effort and time with those technologies.</p>
+                    <button type="button" class="btn btn-warning button btn-txt-colored">Hire Me</button>
+                </div>
+            </div>
+            <div class="col">
+                <div class="row justify-content-md-center" style="padding: 0px 50px;">
+                    <img class="col" style="margin:5px -10px;" src="assets/html.png">
+                    <img class="col" style="margin:5px -10px;" src="assets/css.png">
+                    <img class="col" style="margin:5px -10px;" src="assets/js.png">
+                    <img class="col" style="margin:5px -10px;" src="assets/git.png">
+                    <div class="w-100"></div>
+                    <img class="col" style="margin:5px -10px;" src="assets/botstrap.png">
+                    <img class="col" style="margin:5px -10px;" src="assets/py.png">
+                    <img class="col" style="margin:5px -10px;" src="assets/figma.png">
+                    <img class="col" style="margin:5px -10px;" src="assets/ghub.png">
+                    
+                </div>
+            </div>
+          </div>          
+    </div>
+
+    <div id="projects" class="container-fluid content-1 py-5 font" style="background-color: #212529;"> 
+        <div style="margin-top:100px;">
+        <p class="my-works">Projects</p>
+        <h1 style="text-align: center; margin-top: -25px;">Featured Works</h1>
+
+        <div class="row" style="margin: 0px 230px">
+            <div class="col-xl">
+                <img class="" src="assets/start.png">
+                <p>&nbsp</p>
+                <p>DETECH is a face mask and face shield detection system using YOLOv5 algorithm.</p>
+                <div class="proj-logo">
+                    <p>&nbsp</p>
+                    <img class="logo" src="assets/LOGO-DETECH-3.png">
+                </div>
+           </div>
+
+           <div class="col-xl">
+                <img class="" src="assets/start.png">
+                <p>&nbsp</p>
+                <p>Cinemazing Films is an online cinema ticket reservation developed by the startup company – "The Team".</p>
+                <div class="proj-logo">
+                    <img class="logo" src="assets/icon-cinemazing.png">
+                </div>
+            </div>
+
+            <div class="col-xl">
+                <img class="" src="assets/start.png">
+                <p>&nbsp</p>
+                <p>SARS is a simple-Attendance-Record-System desktop application used by teachers to track attendance.</p>
+                <div class="proj-logo">
+                    <img class="logo" src="assets/sars.png">
+                </div>
+            </div>
+        </div> 
+    </div>
+    </div>
+
+    <div id="contact" class="container-fluid content-1 py-5 font" style="background-color: #1C1C1C;"> 
+        <div class="row" >
+            <div class="col-contact">
+                <h4 style="color:#FFB742; font-weight: bold;">Marc San Diego.</h4>
+                <p>Creative designer & front-end developer</p>
+            </div>
+
+            <div class="col" >
+                <h5>Useful Links</h5>
+                <ul class="nav navbar-nav text-center text-green ml-auto">
+                    <li class="nav-item" role="presentation"><a class="nav-link" style="color:#757575" href="http://localhost/Portfolio/">Home</a></li>
+                    <li class="nav-item" role="presentation"><a class="nav-link" style="color:#757575" href="#about">About</a></li>
+                    <li class="nav-item" role="presentation"><a class="nav-link" style="color:#757575" href="#skills">Skills</a></li>
+                    <li class="nav-item" role="presentation"><a class="nav-link" style="color:#757575" href="#projects">Projects</a></li>
+                    <li class="nav-item" role="presentation"><a class="nav-link" style="color:#757575" href="#contact">Contact</a></li>
+                </ul>
+            </div>
+
+            <div class="col">
+                <h5>Social Media</h5>
+                <ul class="nav navbar-nav text-center text-green ml-auto">
+                    <li class="nav-item" role="presentation"><a class="nav-link" style="color:#757575" href="http://localhost/Portfolio/" target="_blank">Instagram</a></li>
+                    <li class="nav-item" role="presentation"><a class="nav-link" style="color:#757575" href="#about" target="_blank">Linkedin</a></li>
+                    <li class="nav-item" role="presentation"><a class="nav-link" style="color:#757575" href="#skills" target="_blank">Facebook</a></li>
+                    <li class="nav-item" role="presentation"><a class="nav-link" style="color:#757575" href="#projects" target="_blank">Twitter</a></li>
+                    <li class="nav-item" role="presentation"><a class="nav-link" style="color:#757575" href="#contact" target="_blank">Github</a></li>
+                </ul>
+            </div>
+            <div class="col">
+                <h5>Newsletter</h5>
+                <p style="color:#757575; text-align: left;" >Send me an email to get notified about news, update of.</p>
+            </div>
+        </div>
+
+    </div>
+</body>
+
+</html>
